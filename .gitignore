@@ -1,0 +1,17 @@
+#Python
+_pycache_/
+*.py[cod]
+*.pyo
+
+#Virtual Environments
+venv/
+.venv/
+
+#OS Files
+.vscode/
+.DS_Store
+
+#Generated reports
+reports/*
+!reports/.gitkeep
+
