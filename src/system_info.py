@@ -1,16 +1,26 @@
+import socket
+import platform 
+
 class SystemInfoCollector:
         
     def __init__(self):
         pass
 
     def get_hostname(self):
-        pass
+        return socket.gethostname()
+        
 
     def get_operating_system(self):
+        return platform.system()
         pass
 
     def get_os_version(self):
-        pass
+        if (self.get_operating_system() == 'Darwin'):
+            ver = platform.mac_ver()
+            release, ver_info, machine = ver
+            return release
+        else:
+            return None
 
     def get_cpu_architecture(self):
         pass
