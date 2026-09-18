@@ -9,6 +9,7 @@ def main():
     print(collector.get_hostname())
     print(collector.get_operating_system())
     print(collector.get_os_version())
+    print(collector.get_cpu_architecture())
 
 
 if __name__ == "__main__":

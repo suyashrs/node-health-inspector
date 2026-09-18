@@ -23,7 +23,7 @@ class SystemInfoCollector:
             return None
 
     def get_cpu_architecture(self):
-        pass
+        return platform.machine()
 
     def get_total_memory(self):
         pass
